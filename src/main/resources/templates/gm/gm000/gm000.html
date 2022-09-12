@@ -1,0 +1,499 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:layout="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<link href="https://cdn.gamemeca.com/g17/images/icon/gamemeca_16x16.ico" rel="shortcut icon">
+<link rel="apple-touch-icon-precomposed" href="https://cdn.gamemeca.com/g17/images/icon/gamemeca_120x120.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://cdn.gamemeca.com/g17/images/icon/gamemeca_180x180.png">
+<!--<title>라이브러리 오브 루이나 - 게임메카</title>-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="title" content="라이브러리 오브 루이나 - 게임메카">
+<meta name="description" content="라이브러리 오브 루이나는 도서관 전투 시뮬레이션이다. 플레이어는 도서관 사서가 되어 방문하는 손님과 전투를 벌이고, 전투에서 패한 손님은 책이 된다. 책을 모아 도서관을 키우고, 이를 토대로 도시에 숨겨진 비밀을 풀어간다.">
+<meta name="keywords" content="라이브러리 오브 루이나 - 게임메카">
+<meta name="news_keywords" content="라이브러리 오브 루이나 - 게임메카">
+<meta name="subject" content="라이브러리 오브 루이나 - 게임메카">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@game_meca">
+<meta name="twitter:creator" content="@game_meca">
+<meta name="twitter:image" content="https://cdn.gamemeca.com/gmdb/g001/23/05/gm480458_210507-risell-pp4.jpg">
+<meta name="twitter:title" content="라이브러리 오브 루이나 - 게임메카">
+<meta name="twitter:description" content="라이브러리 오브 루이나는 도서관 전투 시뮬레이션이다. 플레이어는 도서관 사서가 되어 방문하는 손님과 전투를 벌이고, 전투에서 패한 손님은 책이 된다. 책을 모아 도서관을 키우고, 이를 토대로 도시에 숨겨진 비밀을 풀어간다.">
+
+<meta property="og:url" content="https://www.gamemeca.com/game.php?rts=gmview&amp;gmid=g0012305">
+<meta property="og:title" content="라이브러리 오브 루이나 - 게임메카">
+<meta property="og:description" content="라이브러리 오브 루이나는 도서관 전투 시뮬레이션이다. 플레이어는 도서관 사서가 되어 방문하는 손님과 전투를 벌이고, 전투에서 패한 손님은 책이 된다. 책을 모아 도서관을 키우고, 이를 토대로 도시에 숨겨진 비밀을 풀어간다.">
+<meta property="og:image" content="https://cdn.gamemeca.com/gmdb/g001/23/05/gm480458_210507-risell-pp4.jpg">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="480">
+<meta property="og:type" content="article">
+<meta property="og:article:author" content="게임메카">
+<meta property="og:locale" content="ko_KR">
+<meta property="kakao:title" content="라이브러리 오브 루이나 - 게임메카">
+<meta property="kakao:description" content="라이브러리 오브 루이나는 도서관 전투 시뮬레이션이다. 플레이어는 도서관 사서가 되어 방문하는 손님과 전투를 벌이고, 전투에서 패한 손님은 책이 된다. 책을 모아 도서관을 키우고, 이를 토대로 도시에 숨겨진 비밀을 풀어간다.">
+<meta name="resource-type" content="article">
+<meta name="image" content="https://cdn.gamemeca.com/gmdb/g001/23/05/gm480458_210507-risell-pp4.jpg">
+<link rel="image_src" href="https://cdn.gamemeca.com/gmdb/g001/23/05/gm480458_210507-risell-pp4.jpg">
+
+<link rel="canonical" href="https://www.gamemeca.com/game.php?rts=gmview&amp;gmid=g0012305">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.gamemeca.com/game.php?rts=gmview&amp;gmid=g0012305">
+<link rel="stylesheet" type="text/css" href="https://cdn.gamemeca.com/g17/css/common.css?v=21050818">
+<th:block th:include="common/base"></th:block>
+<script layout:fragment="script" type="text/javascript" th:src="@{/assets/js/gm/gm000/gm000.js}"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.gamemeca.com/g17/css/gameinfo.css?v=21050818?v=21050818">
+
+<th:block th:include="fragments/header"></th:block>
+<div id="main">
+    <input type="hidden" th:value="${gameId}" th:attr="id='gameId'"/>
+    <input type="hidden" th:value="${gmTabNm}" th:attr="id='gmTabNm'"/>
+
+    <th:block th:include="common/aside"></th:block>
+    <div id="content">
+        <div class="content-top-ad"><script type="text/javascript" src="https://ads.gamemeca.com/adver/js/?tag=gamemeca/gameinfo/gameinfo_big"></script><div id="meca_ads_31"><iframe src="https://ads.gamemeca.com/adver/html/?id=31" width="1041" height="80" scrolling="no" style="margin: 0; padding: 0; border: none;"></iframe></div></div>
+        <div class="content-left">
+            <!-- intro -->
+            <!--기본 정보-->
+            <th:block th:include="gm/gm000/gm000-01"></th:block>
+
+
+            <!--게임정보 탭-->
+            <div class="db-sub-menu">
+                <ul>
+                    <li class="on" data-ax-path="gmInfo">
+                        <a href="#">주요정보</a>
+                    </li>
+                    <li data-ax-path="gmNews">
+                        <a href="#" rel="nofollow">뉴스</a>
+                    </li>
+                    <li data-ax-path="gmReview">
+                        <a href="#" rel="nofollow">프리뷰/리뷰</a>
+                    </li>
+                    <li data-ax-path="gmSshot">
+                        <a href="#" rel="nofollow">스크린샷</a>
+                    </li>
+                    <li data-ax-path="gmVideo">
+                        <a href="#" rel="nofollow">동영상</a>
+                    </li>
+                    <li data-ax-path="gmAttack">
+                        <a href="#" rel="nofollow">공략</a>
+                    </li>
+                    <li data-ax-path="">
+                        <a href="#" rel="nofollow">히스토리</a>
+                    </li>
+                </ul>
+            </div>
+            <!--//게임정보 탭 -->	<!--// intro -->
+
+            <!-- tab contents -->
+
+            <!--게임소개-->
+            <div id="contentList">
+                <div id="gmInfo" style="display: none;">
+                    <div class="db-cont1">
+                        <div class="title ">게임소개</div>
+                        <div class="db-cont1-left">라이브러리 오브 루이나는 도서관 전투 시뮬레이션이다. 플레이어는 도서관 사서가 되어 방문하는 손님과 전투를 벌이고, 전투에서 패한 손님은 책이 된다. 책을 모아 도서관을 키우고, 이를 토대로 도시에 숨겨진 비밀을 풀어간다.</div>
+                    </div>
+                    <!--//게임소개-->
+
+                    <!--시리즈-->
+                    <div class="db-cont1">
+                        <div class="title ">시리즈</div>
+                        <div class="db-cont1-left">
+                            <span class="no-contents">관련 정보가 없습니다</span>    </div>
+                    </div>
+
+                    <!-- 뉴스 -->
+                    <div class="db-cont2">
+                        <div class="title">뉴스</div>
+                        <ul class="list_news">
+                            <li class="list-hot">
+                                <a href="/view.php?gid=1659610" class="link_thumb static-thumbnail">
+                                    <span class="static-thumbnail-style"></span><img src="https://cdn.gamemeca.com/gmdata/0001/659/610/gm223481_210507-risell-pp6451.jpg" width="150" height="85">
+                                </a>
+                                <div class="cont_thumb">
+                                    <strong class="tit_thumb"><span class="static-img-btn icon-article-hot"></span><a href="/view.php?gid=1659610">로보토미 코퍼레이션 개발사 신작, 28일 스팀 정식 출시</a></strong>
+                                </div>
+                                <div class="desc_thumb">국내 인디게임 개발사 프로젝트 문 신작 라이브러리 오브 루이나가 오는 28일 스팀을 통해 정식 출시된다. 프로젝트 문은 전작 로보토미 코퍼레이션으로 국내외 게이머 이목을 집중시킨 바 있으며, 라이브러리 오브 루이나는 앞서 해보기에서 유저 평점 ‘매우 긍정적’을 기록 중이다</div>
+                                <div class="day_news">2021.05.07 13:56</div>
+                            </li>
+                        </ul>
+                        <div><a class="more-btn" href="/game.php?rts=gmview&amp;gmid=g0012305&amp;tab=news">+뉴스 더보기</a></div>
+                    </div>
+                    <!--//뉴스 -->
+
+                    <!-- 프리뷰/리뷰 -->
+                    <div class="db-cont2">
+                        <div class="title">프리뷰/리뷰</div>
+                        <ul class="list_news">
+                            <span class="no-contents">관련 정보가 없습니다</span>
+                        </ul>
+                        <div><a class="more-btn" href="/game.php?rts=gmview&amp;gmid=g0012305&amp;tab=review">+프리뷰/리뷰 더보기</a></div>
+                    </div>
+                    <!--//프리뷰/리뷰 -->
+
+                    <!-- 스크린샷 -->
+
+                    <div class="db-cont2">
+                        <div class="title">스크린샷</div>
+                        <div class="db_thumlist">
+                            <span class="no-contents">관련 정보가 없습니다</span>
+                        </div>
+                        <div><a class="more-btn" href="/game.php?rts=gmview&amp;gmid=g0012305&amp;tab=sshot">+스크린샷 더보기</a></div>
+                    </div><!--//스크린샷 -->
+
+                    <!-- 동영상 -->
+
+                    <div class="db-cont2">
+                        <div class="title">동영상</div>
+                        <div class="db_thumlist">
+                            <span class="no-contents">관련 정보가 없습니다</span>
+                        </div>
+                        <div><a class="more-btn" href="/game.php?rts=gmview&amp;gmid=g0012305&amp;tab=movie">+동영상 더보기</a></div>
+                    </div><!--//동영상 -->
+
+                    <!-- 공략 -->
+
+                    <div class="db-cont2">
+                        <div class="title">공략</div>
+                        <div class="db_thumlist">
+                            <span class="no-contents">관련 정보가 없습니다</span>
+                        </div>
+                        <div><a class="more-btn" href="/game.php?rts=gmview&amp;gmid=g0012305&amp;tab=guide">+공략 더보기</a></div>
+                    </div><!--//공략 -->	<!--// tab contents -->
+                </div>
+                <div id="gmNews" style="display: none">
+                    <div class="dblist_st">
+                        <div class="dbnum h2"><ins class="gmview-tab-guide-total"></ins>총 17개의 뉴스가 있습니다.</div>
+                    </div>
+                    <div class="news-list">
+                        <ul class="list_news">
+                            <li class="">
+                                <a href="/view.php?gid=1443806" class="link_thumb static-thumbnail">
+                                    <span class="static-thumbnail-style"></span><img src="https://cdn.gamemeca.com/gmdata/0001/443/806/161051_LSB2017032201.jpg" width="150" height="85">
+                                </a>
+                                <div class="cont_thumb">
+                                    <strong class="tit_thumb"><a href="/view.php?gid=1443806">페르시아 왕자 호위에서 주인공으로, 어쌔신 크리드의 10년</a></strong>
+                                </div>
+                                <div class="desc_thumb">하나의 전통 있는 프랜차이즈를 확립하기란 대단히 힘든 일이다. 그렇기에 2007년 첫 발매 이래 유명세를 잃지 않는 것은 물론이요, 그 인기가 계속 커지고 있기까지 한 ‘어쌔신 크리드’는 매우 특별한 프랜차이즈라고 할 수 있다. 이처럼 오랜 세월 동안 흔들리지 않고 가치를 키워온 게임 프랜차이즈는 매우 드물기 때문이다</div>
+                                <div class="day_news">2018.03.22 15:33</div>
+                            </li>
+                            <li class="">
+                                <a href="/view.php?gid=1436168" class="link_thumb static-thumbnail">
+                                    <span class="static-thumbnail-style"></span><img src="https://cdn.gamemeca.com/gmdata/0001/436/168/670210_KHS_180219_999AC.jpg" width="150" height="85">
+                                </a>
+                                <div class="cont_thumb">
+                                    <strong class="tit_thumb"><a href="/view.php?gid=1436168">세계 역사, 어쌔신 크리드에서 배워라</a></strong>
+                                </div>
+                                <div class="desc_thumb">고대 이집트를 완벽하게 재현했다는 평가를 받는 유비소프트 ‘어쌔신 크리드: 오리진’이 이젠 역사 교육에도 쓰인다. 오는 20일, 무료 업데이트를 통해 ‘어쌔신 크리드: 오리진’에 ‘디스커버리 투어’ 콘텐츠가 추가된다. ‘디스커버리 투어’는 게임 속에 구현된 이집트를 자유로이 돌아 다니며, 당시의 역사와 일상 생활에 대해 배울 수 있는 일종의 교육 모드다</div>
+                                <div class="day_news" >2018.02.19 10:51</div>
+                            </li>
+                            <li class="">
+                                <a href="/view.php?gid=1430392" class="link_thumb static-thumbnail">
+                                    <span class="static-thumbnail-style"></span><img src="https://cdn.gamemeca.com/gmdata/0001/430/392/909466_KHS_180123_999AC.jpg" width="150" height="85">
+                                </a>
+                                <div class="cont_thumb">
+                                    <strong class="tit_thumb"><a href="/view.php?gid=1430392">무대는 시나이 반도, '어쌔신 크리드: 오리진' 확장팩 발매</a></strong>
+                                </div>
+                                <div class="desc_thumb">인트라게임즈는 23일, 유비소프트와 협력하여 ‘어쌔신 크리드: 오리진’ 첫 번째 확장팩 ‘더 히든 원즈’를 출시했다. '더 히든 원즈'는 형제단이 결성된지 몇 년 후, 바예크의 여정을 담고 있다. 플레이어는 시나이 반도를 여행하면서 로마 정복군과 반란 세력 사이의 분쟁에 대해 조사하고, 암살단의 신조를 정립하여 초기의 형제단을 규합해야 한다</div>
+                                <div class="day_news">2018.01.23 19:10</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pagingNav">
+                        <strong class="cur_num">1</strong><a class="num_box" href="/game.php?rts=gmview&amp;gmid=g0009054&amp;tab=news&amp;p=2">2</a><a class="num_next" href="/game.php?rts=gmview&amp;gmid=g0009054&amp;tab=news&amp;p=2"></a></div>
+                </div>
+                <div id="gmReview" style="display: none">
+                    <div class="dblist_st">
+                        <div class="dbnum h2"><ins class="gmview-tab-guide-total"></ins>총 3개의 프리뷰/리뷰가 있습니다.</div>
+                    </div>
+                    <div class="news-list">
+                        <ul class="list_news">
+                            <li class="">
+                                <a href="/view.php?gid=1405166" class="link_thumb static-thumbnail">
+                                    <span class="static-thumbnail-style"></span><img src="https://cdn.gamemeca.com/gmdata/0001/405/166/588744_cooladsl_thumb_1094.jpg" width="150" height="85">
+                                </a>
+                                <div class="cont_thumb">
+                                    <strong class="tit_thumb"><a href="/view.php?gid=1405166">어쌔신 크리드: 오리진, 유비소프트가 일 냈다</a></strong>
+                                </div>
+                                <div class="desc_thumb">탄탄한 세계관 설정은 좋은 게임의 가장 중요한 조건이다. 사실상 게임의 토대라고 할 수 있는 부분으로, 만들어진 세계관과 콘텐츠가 잘 맞물리지 않는다면, 몰입감이 떨어질 수 밖에 없다. 이런 점에서, 최근 나오는 게임들이 더 완성도 높은 세계관 구현에 집중하는 이유도 어느 정도 납득이 된다. ‘어쌔신 크리드’ 시리즈는 이런 세계관 구현에 독보적인 게임이다</div>
+                                <div class="day_news">2017.11.02 12:43</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pagingNav">
+                        <strong class="cur_num">1</strong></div>
+                </div>
+                <form action="/gm/gm004/gm004-01" id="gameSshotForm" method="post">
+                    <div id="gmSshot" style="display: none">
+                        <div class="dblist_st">
+                            <div class="dbnum h2"><ins class="gmview-tab-guide-total"></ins>총 <span data-ax-path="shCnt"></span>개의 스크린샷이 있습니다.</div>
+                        </div>
+                        <div class="db-cont2">
+                            <div class="db_thumlist">
+                                <ul id="ulSshot_1" style="display: none;" class="ulssh">
+                                    <li style="display: none" id="liSshot_1">
+                                        <input type="hidden" data-ax-path="gameId"/>
+                                        <input type="hidden" id="gameSshotId"/>
+                                        <a class="loadThumbView" >
+                                            <span class="iconsc"></span>
+                                            <img src="#" data-ax-path="gameSshotImgUrl"></a>
+                                        <a class="title" data-ax-path="description"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="list-page-nav" class="pagingNav" ></div>
+                    </div>
+                </form>
+                <div id="gmMovie" style="display: none">
+                    <div class="dblist_st">
+                        <div class="dbnum h2"><ins class="gmview-tab-guide-total"></ins>총 10개의 동영상이 있습니다.</div>
+                    </div>
+                    <div class="db-cont2">
+                        <div class="db_thumlist">
+                            <ul>
+                                <li>
+                                    <a class="loadThumbView" data-gid="1438059"><span class="iconmv"></span><img src="https://cdn.gamemeca.com/gmdata/0001/438/059/815280_thumb1618.jpg"></a>
+                                    <a class="title">어쌔신 크리드: 오리진, 초자연의 영역 넘나드는 DLC가 온다</a>
+                                </li>
+                                <li>
+                                    <a class="loadThumbView" data-gid="1436752"><span class="iconmv"></span><img src="https://cdn.gamemeca.com/gmdata/0001/436/752/443898_thumb1614.jpg"></a>
+                                    <a class="title">어쌔신 크리드: 오리진, 교육 모드로 새로운 지평을 열다</a>
+                                </li>
+                                <li>
+                                    <a class="loadThumbView" data-gid="1430371"><span class="iconmv"></span><img src="https://cdn.gamemeca.com/gmdata/0001/430/371/148862_thumb1571.jpg"></a>
+                                    <a class="title">어쌔신 크리드: 오리진, 시나이 반도로 향한 암살단</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pagingNav">
+                        <strong class="cur_num">1</strong></div>
+                </div>
+                <div id="gmGuide" style="display: none">
+                    <div class="dblist_st">
+                        <div class="dbnum h2"><ins class="gmview-tab-guide-total"></ins>총 3개의 공략이 있습니다.</div>
+                    </div>
+                    <div class="gmview-tab-guide-thumb">
+                        <div class="db_thumlist">
+                            <ul>			<li>
+                                <a class="select-guide-main" data-gid="1409015"><img src="https://cdn.gamemeca.com/gmdata/0001/409/015/913394_cooladsl_thumb_1109.jpg"></a>
+                                <a class="title">[PC] 어쌔신 크리드: 오리진 3부</a>
+                            </li>
+                                <li>
+                                    <a class="select-guide-main" data-gid="1407413"><img src="https://cdn.gamemeca.com/gmdata/0001/407/413/121431_cooladsl_thumb_1105.jpg"></a>
+                                    <a class="title">[PC] 어쌔신 크리드: 오리진 2부</a>
+                                </li>
+                                <li>
+                                    <a class="select-guide-main" data-gid="1405619"><img src="https://cdn.gamemeca.com/gmdata/0001/405/619/330125_cooladsl_thumb_1096.jpg"></a>
+                                    <a class="title">[PC] 어쌔신 크리드: 오리진 1부</a>
+                                </li>
+                            </ul></div>
+                    </div>
+                </div>
+                <div id="gmHistory" style="display: none">
+                    <div class="historyWrap">
+                        <div class="history">
+                            <dl class="leftA">
+                                <dd class="year">2017</dd>
+                            </dl>
+                            <dl class="rightA">
+                                <dd>
+                                    <span class="month">10</span>
+                                    어쌔신 크리드: 오리진 한국어판 정식 발매				<span class="mDay">(10/27 ~ 10/27)</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- right section -->
+        <div class="content-right">
+            <div class="gmview-section-right"><div class="section-right">
+                <div class="special-right">
+                    <ul>
+                        <li class="mecazine"><a href="/view.php?gid=1659653" target="_blank"></a></li>
+                    </ul>
+                </div>	<!--//특별페이지-->
+                <!--많이본 뉴스-->
+                <div class="rank_wrap">
+                    <div class="tab_enter">
+                        <a class="link_tab on" onclick="return false;">많이본 뉴스</a>
+                        <a class="link_tab " onclick="return false;">SNS 화제</a>
+                    </div>
+                    <div class="rank_list">
+                        <ul data-ranking="1" style="display:block;">
+                            <li><a href="/view.php?gid=1659570"><span class="rank_num num1"></span>블리자드 게임 월간 이용자, 3개월 간 200만 명 감소했다</a></li>
+                            <li><a href="/view.php?gid=1659391"><span class="rank_num num2"></span>모여봐요 동물의 숲 도용한 게임이 MS 스토어에 올라왔다</a></li>
+                            <li><a href="/view.php?gid=1659375"><span class="rank_num num3"></span>2,800개 리뷰 중 92%가 비추, 스팀 ‘압도적 부정적' 나왔다</a></li>
+                            <li><a href="/view.php?gid=1659461"><span class="rank_num num4"></span>카카오게임즈, 우마무스메 올해 안에 국내 출시한다</a></li>
+                            <li><a href="/view.php?gid=1659473"><span class="rank_num num5"></span>데바데 개발자가 한국에서 사기 당했다? 개발사에 물으니</a></li>
+                            <li><a href="/view.php?gid=1659364"><span class="rank_num num6"></span>고산 등정하는 로그라이크 게임 스팀에 나왔다</a></li>
+                            <li><a href="/view.php?gid=1659401"><span class="rank_num num7"></span>GS25 혐오 논란에, 그랑사가 도시락 쿠폰 이벤트 중단</a></li>
+                            <li><a href="/view.php?gid=1659650"><span class="rank_num num8"></span>[세계기행] 로보토미 코퍼레이션, 미친 기업들의 도시</a></li>
+                            <li><a href="/view.php?gid=1659513"><span class="rank_num num9"></span>디아블로 이모탈, 올해 연말 글로벌 출시한다</a></li>
+                            <li><a href="/view.php?gid=1659610"><span class="rank_num num10"></span>로보토미 코퍼레이션 개발사 신작, 28일 스팀 정식 출시</a></li>
+                        </ul>
+                        <ul data-ranking="2" style="display:none;">
+                            <li><a href="/view.php?gid=1659610"><span class="rank_num num1"></span>로보토미 코퍼레이션 개발사 신작, 28일 스팀 정식 출시</a></li>
+                            <li><a href="/view.php?gid=1659570"><span class="rank_num num2"></span>블리자드 게임 월간 이용자, 3개월 간 200만 명 감소했다</a></li>
+                            <li><a href="/view.php?gid=1659401"><span class="rank_num num3"></span>GS25 혐오 논란에, 그랑사가 도시락 쿠폰 이벤트 중단</a></li>
+                            <li><a href="/view.php?gid=1659461"><span class="rank_num num4"></span>카카오게임즈, 우마무스메 올해 안에 국내 출시한다</a></li>
+                            <li><a href="/view.php?gid=1659386"><span class="rank_num num5"></span>스마일게이트, 역대 최대 규모 경력 개발자 공채 시작</a></li>
+                            <li><a href="/view.php?gid=1659460"><span class="rank_num num6"></span>바이와 징크스의 과거, 롤 애니메이션 올 가을 넷플릭스 방영</a></li>
+                            <li><a href="/view.php?gid=1659473"><span class="rank_num num7"></span>데바데 개발자가 한국에서 사기 당했다? 개발사에 물으니</a></li>
+                            <li><a href="/view.php?gid=1659391"><span class="rank_num num8"></span>모여봐요 동물의 숲 도용한 게임이 MS 스토어에 올라왔다</a></li>
+                            <li><a href="/view.php?gid=1659536"><span class="rank_num num9"></span>컴퓨팅 사고 기른다, '차근차근 게임코딩' 6월 스위치 출시</a></li>
+                            <li><a href="/view.php?gid=1659364"><span class="rank_num num10"></span>고산 등정하는 로그라이크 게임 스팀에 나왔다</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="right_ad"><script type="text/javascript" src="https://ads.gamemeca.com/adver/js/?tag=gamemeca/gameinfo/gameinfo_ss"></script><div id="meca_ads_32"><iframe src="https://ads.gamemeca.com/adver/html/?id=32" width="260" height="277" scrolling="no" style="margin: 0; padding: 0; border: none;"></iframe></div></div>
+                <!--이벤트-->
+                <style>
+                    .event-right { height:380px; border-top: 4px solid #e7e5e9; padding-top: 25px; margin-bottom: 25px; display: block; overflow:hidden; }
+                </style>
+                <div class="event-right">
+                    <span class="magazine-title"><a href="/event.php">이벤트</a></span>
+                    <button class="erarrowR sliderActionE"></button><button class="erarrowL sliderActionE"></button>
+                    <div id="sliderBox2">
+                        <div class="event-loc-slider" style="width:1300px;">
+                            <dl>
+                                <dd>
+                                    <a href="https://www.gamemeca.com/event/2021/21th/?ev=big1" target="_blank"><img src="https://cdn.gamemeca.com/gmevent/000/010/06/gm718656_ev_list_banner.jpg"></a>				</dd>
+                            </dl>
+                            <dl>
+                                <dd>
+                                    <a href="https://www.gamemeca.com/event/2021/21th/?ev=big4" target="_blank"><img src="https://cdn.gamemeca.com/gmevent/000/010/13/gm128468_ev_list_banner.jpg"></a>				</dd>
+                            </dl>
+                            <dl>
+                                <dd>
+                                    <a href="https://www.gamemeca.com/event/2021/21th/?ev=big4" target="_blank"><img src="https://cdn.gamemeca.com/gmevent/000/010/14/gm641138_ev_list_banner.jpg"></a>				</dd>
+                            </dl>
+                            <dl>
+                                <dd>
+                                    <a href="https://www.gamemeca.com/event/2021/21th/?ev=big3" target="_blank"><img src="https://cdn.gamemeca.com/gmevent/000/010/08/gm766861_ev_list_banner.jpg"></a>				</dd>
+                            </dl>
+                            <dl>
+                                <dd>
+                                    <a href="https://www.gamemeca.com/event/2021/21th/?ev=big2" target="_blank"><img src="https://cdn.gamemeca.com/gmevent/000/010/07/gm759562_ev_list_banner.jpg"></a>				</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+
+                <!--//이벤트-->
+
+
+                <!--일정-->
+
+                <div class="game-schedule">
+                    <div class="title">게임일정<span class="caico"></span></div>
+
+                    <div class="gameCal">
+                        <div>
+                            <div class="date">
+                                <div><span class="year">2021</span>년</div>
+                                <div><span class="month">05</span>월</div>
+                                <div>
+                                    <button class="scheduleIcoarrowL" data-ym="2021-04"></button><button class="scheduleIcoarrowR" data-ym="2021-06"></button>
+                                </div>
+                            </div>
+                            <div class="calender">
+                                <!--달력-->
+                                <table border="0" cellspacing="0" class="calender-table">
+                                    <caption></caption>
+                                    <colgroup>
+                                        <col width="25px">
+                                        <col width="25px">
+                                        <col width="25px">
+                                        <col width="25px">
+                                        <col width="25px">
+                                        <col width="25px">
+                                        <col width="25px">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">일</th>
+                                        <th scope="col">월</th>
+                                        <th scope="col">화</th>
+                                        <th scope="col">수</th>
+                                        <th scope="col">목</th>
+                                        <th scope="col">금</th>
+                                        <th scope="col">토</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody><tr><td class="sun"><a href="/game.php?rts=schedule&amp;ym=202105"></a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105"></a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105"></a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105"></a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105"></a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105"></a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">1</a></td></tr><tr><td class="sun"><a href="/game.php?rts=schedule&amp;ym=202105">2</a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">3</a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">4</a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">5</a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">6</a></td><td class="day selected"><a href="/game.php?rts=schedule&amp;ym=202105">7</a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">8</a></td></tr><tr><td class="sun"><a href="/game.php?rts=schedule&amp;ym=202105">9</a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">10</a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">11</a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">12</a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">13</a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">14</a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">15</a></td></tr><tr><td class="sun"><a href="/game.php?rts=schedule&amp;ym=202105">16</a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">17</a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">18</a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">19</a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">20</a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">21</a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">22</a></td></tr><tr><td class="sun"><a href="/game.php?rts=schedule&amp;ym=202105">23</a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">24</a></td><td class="day selected"><a href="/game.php?rts=schedule&amp;ym=202105">25</a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">26</a></td><td class="day selected"><a href="/game.php?rts=schedule&amp;ym=202105">27</a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">28</a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">29</a></td></tr><tr><td class="sun"><a href="/game.php?rts=schedule&amp;ym=202105">30</a></td><td class="day"><a href="/game.php?rts=schedule&amp;ym=202105">31</a></td><td class="nextMonth"><a href="/game.php?rts=schedule&amp;ym=202105">1</a></td><td class="nextMonth"><a href="/game.php?rts=schedule&amp;ym=202105">2</a></td><td class="nextMonth"><a href="/game.php?rts=schedule&amp;ym=202105">3</a></td><td class="nextMonth"><a href="/game.php?rts=schedule&amp;ym=202105">4</a></td><td class="nextMonth"><a href="/game.php?rts=schedule&amp;ym=202105">5</a></td></tr></tbody>
+                                </table>
+                                <!--//달력-->
+
+                                <div class="calLayer" style="display: none;z-index:1;"></div>
+                            </div>
+                        </div>
+                        <div class="btmAllDate">
+                            <a href="/g-report.php" class="schedule-contact">게임일정등록</a>
+                            <a href="/game.php?rts=schedule" class="schedule-view">일정전체보기</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--//일정-->
+                <!-- 인기 게임 순위 -->
+
+                <div class="ranking">
+                    <div class="title">인기게임순위</div>
+                    <div class="ranking-left">
+                        <div class="list">
+                            <ul>
+                                <li>
+                                    <span class="rknum1">1</span><span class="icork"></span><span class="iconum"></span><span class="icogam"><img src="https://cdn.gamemeca.com/gmdb/g000/26/18/199120.jpg" width="16" height="16"> <a href="/game.php?rts=gmview&amp;gmid=g0002618">리그 오브 레전드</a></span>
+                                </li>
+                                <li>
+                                    <span class="rknum1">2</span><span class="icork1"></span><span class="iconum">1</span><span class="icogam"><img src="https://cdn.gamemeca.com/gmdb/g000/72/97/221151.jpg" width="16" height="16"> <a href="/game.php?rts=gmview&amp;gmid=g0007297">로스트아크</a></span>
+                                </li>
+                                <li>
+                                    <span class="rknum1">3</span><span class="icork2"></span><span class="iconum">1</span><span class="icogam"><img src="https://cdn.gamemeca.com/gmdb/g000/88/08/221151.jpg" width="16" height="16"> <a href="/game.php?rts=gmview&amp;gmid=g0008808">플레이어언노운스 배틀그라운드</a></span>
+                                </li>
+                                <li>
+                                    <span class="rknum2">4</span><span class="icork1"></span><span class="iconum">1</span><span class="icogam"><img src="https://cdn.gamemeca.com/gmdb/g000/18/23/199120.jpg" width="16" height="16"> <a href="/game.php?rts=gmview&amp;gmid=g0001823">서든어택</a></span>
+                                </li>
+                                <li>
+                                    <span class="rknum2">5</span><span class="icork1"></span><span class="iconum">1</span><span class="icogam"><img src="https://cdn.gamemeca.com/gmdb/g000/96/37/692068_221151.jpg" width="16" height="16"> <a href="/game.php?rts=gmview&amp;gmid=g0009637">피파 온라인 4</a></span>
+                                </li>
+                                <li>
+                                    <span class="rknum2">6</span><span class="icork2"></span><span class="iconum">2</span><span class="icogam"><img src="https://cdn.gamemeca.com/gmdb/g000/72/94/199120.jpg" width="16" height="16"> <a href="/game.php?rts=gmview&amp;gmid=g0007294">오버워치</a></span>
+                                </li>
+                                <li>
+                                    <span class="rknum2">7</span><span class="icork"></span><span class="iconum"></span><span class="icogam"><img src="https://cdn.gamemeca.com/gmdb/g001/17/93/538821_200302-risell-uu5.jpg" width="16" height="16"> <a href="/game.php?rts=gmview&amp;gmid=g0011793">발로란트</a></span>
+                                </li>
+                                <li>
+                                    <span class="rknum2">8</span><span class="icork"></span><span class="iconum"></span><span class="icogam"><img src="https://cdn.gamemeca.com/gmdb/g000/42/53/199120.jpg" width="16" height="16"> <a href="/game.php?rts=gmview&amp;gmid=g0004253">아이온: 영원의 탑</a></span>
+                                </li>
+                                <li>
+                                    <span class="rknum2">9</span><span class="icork"></span><span class="iconum"></span><span class="icogam"><img src="https://cdn.gamemeca.com/gmdb/g000/10/53/221151(0).jpg" width="16" height="16"> <a href="/game.php?rts=gmview&amp;gmid=g0001053">메이플스토리</a></span>
+                                </li>
+                                <li>
+                                    <span class="rknum2">10</span><span class="icork"></span><span class="iconum"></span><span class="icogam"><img src="https://cdn.gamemeca.com/gmdb/g000/04/35/199120(0).jpg" width="16" height="16"> <a href="/game.php?rts=gmview&amp;gmid=g0000435">스타크래프트</a></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pollbtn">
+                        <a class="pollrank" href="/ranking.php?rid=2104"></a>
+                        <a class="addpoll" href="/ranking.php"></a>
+                    </div>
+                </div>	<!-- //인기 게임 순위 -->
+                <div class="right_ad2"><script type="text/javascript" src="https://ads.gamemeca.com/adver/js/?tag=gamemeca/gameinfo/gameinfo_box"></script><div id="meca_ads_33"><iframe src="https://ads.gamemeca.com/adver/html/?id=33" width="260" height="185" scrolling="no" style="margin: 0; padding: 0; border: none;"></iframe></div></div>
+
+            </div>
+            </div>
+        </div>
+        <!--// right section -->			</div>
+</div>
+
+
+<th:block th:include="fragments/footer"></th:block>
+
+</body>
+
+</html>

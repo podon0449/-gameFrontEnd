@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:layout="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://cdn.gamemeca.com/g17/css/common.css?v=21050818">
+    <th:block th:include="common/base"></th:block>
+    <script layout:fragment="script" type="text/javascript" th:src="@{/assets/js/gm/gm001/gm001.js}"></script>
+</head>
+<body>
+<th:block th:include="fragments/header"></th:block>
+<div id="main">
+    <th:block th:include="common/aside"></th:block>
+    <div id="content">
+        <div class="content-top-ad">
+            <script type="text/javascript"
+                    src="https://ads.gamemeca.com/adver/js/?tag=gamemeca/gameinfo/gameinfo_big"></script>
+            <div id="meca_ads_31">
+                <iframe src="https://ads.gamemeca.com/adver/html/?id=31" width="1041" height="80" scrolling="no"
+                        style="margin: 0; padding: 0; border: none;"></iframe>
+            </div>
+        </div>
+        <!--//게임 DB 선택-->
+        <div class="dbSchbox">
+            <div class="Bs1">
+                <div class="leftTit">플랫폼</div>
+                <div class="cont" id="platform">
+                    <dd><p><a class="select-platform" data-key="36">온라인</a></p></dd>
+                    <dd><p><a class="select-platform" data-key="37">PC</a></p></dd>
+                    <dd><p><a class="select-platform" data-key="38">비디오</a></p></dd>
+                    <dd><p><a class="select-platform" data-key="39">웹게임</a></p></dd>
+                    <dd><p><a class="select-platform" data-key="250">VR</a></p></dd>
+                </div>
+            </div>
+            <div class="BsLine"></div>
+            <div class="Bs1">
+                <div class="wrapMenu">
+                    <div class="leftTit">장르</div>
+                    <div class="cont" id="genre">
+                        <dd><p><a class="select-genre" data-key="66">MMORPG</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="67">MORPG</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="68">액션 RPG</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="69">SRPG</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="70">롤플레잉</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="71">전략시뮬</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="72">시뮬레이션</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="73">비행액션</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="74">비행시뮬</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="75">육성시뮬</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="76">연애시뮬</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="77">경영시뮬</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="78">FPS</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="79">RTS</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="80">액션</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="81">대전액션</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="82">리듬액션</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="83">스포츠</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="84">레이싱</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="85">TCG</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="86">TPS</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="87">어드벤쳐</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="88">비주얼노벨</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="89">기능성게임</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="90">AOS</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="179">슈팅</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="180">소셜게임</a></p></dd>
+                        <dd><p><a class="select-genre" data-key="186">기타</a></p></dd>
+                    </div>
+                </div>
+            </div>
+            <div class="BsLine"></div>
+            <div class="Bs1">
+                <div class="leftTit">상태</div>
+                <div class="cont" id="status">
+                    <dd><p><a class="select-status" data-key="24">개발중</a></p></dd>
+                    <dd><p><a class="select-status" data-key="25">클로즈베타</a></p></dd>
+                    <dd><p><a class="select-status" data-key="31">오픈베타</a></p></dd>
+                    <dd><p><a class="select-status" data-key="32">부분유료화</a></p></dd>
+                    <dd><p><a class="select-status" data-key="33">정액제</a></p></dd>
+                    <dd><p><a class="select-status" data-key="34">무료</a></p></dd>
+                    <dd><p><a class="select-status" data-key="35">서비스종료</a></p></dd>
+                </div>
+            </div>
+
+            <div class="BsLine"></div>
+
+            <div class="Bs2">
+                <div class="leftTit"><span class="spim"></span> 게임검색</div>
+                <div class="cont">
+                    <input type="text" placeholder="통합검색" id="gm_search">
+                    <a class="searchBtn" id="gm_search_text"></a>
+                    <a class="initBtn" id="gm_search_init">초기화</a>
+                </div>
+            </div>
+        </div>
+        <!--//게임 DB 선택-->
+
+        <!--게임 DB 리스트-->
+        <div class="dblist_st">
+            <div class="dbnum h2" id="dblist-total"><span id="totalGameCnt"></span>개의 게임 정보가 있습니다.</div>
+            <div class="listst">
+                <ul>
+                    <li class="list-type-change dbtap1 on" id="GL_1"></li>
+                    <li class="list-type-change dbtap2" id="GK_1"></li>
+                </ul>
+            </div>
+        </div>
+        <!--//게임 DB 리스트-->
+
+        <!--gmdb list -->
+        <form action="/gm/gm000/gm000" id="gameListForm" method="post">
+            <div class="dblist_area" id="gmdb-list-box">
+                <ul class="dblist_gallery" id="ulEmptyBox">
+                    <li style="display: none;">
+                        <input type="hidden" data-ax-path="gameId"/>
+                        <a class="move_gmdb" ><img data-ax-path="img"
+                                src=""><span class="tit_name" data-ax-path="gameName"></span></a>
+                        <div class="webg_txt">플랫폼: <span class="green" data-ax-path="platform">-</span></div>
+                        <div class="webg_txt">장르: <span class="green" data-ax-path="genre">-</span></div>
+                        <div class="webg_txt">서비스 상태: <span class="green" data-ax-path="serviceStatus">-</span></div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="dblist_area" id="gmdb-list-list">
+                <ul class="dblist_news" style="display: none" id="ulEmptyList">
+                    <li style="display: none">
+                        <input type="hidden" data-ax-path="gameId"/>
+                        <a class="link_thumb move_gmdb" ><img
+                                src="" data-ax-path="img"
+                                style="width: 150px; height: 85px;"></a>
+                        <div class="cont_thumb"><a href="#" data-ax-path="gameId"><strong class="tit_thumb" data-ax-path="gameName">
+                        </strong></a></div>
+                        <div class="flp-txt">· 플렛폼: <span data-ax-path="platform"></span> · 장르:<span data-ax-path="genre"></span></div>
+                        <div class="desc_thumb"></div>
+                    </li>
+                </ul>
+            </div>
+        </form>
+            <!--        </form>-->
+        <!--// gmdb list -->
+
+        <!--        gmdb nav -->
+        <div id="list-page-nav" class="pagingNav" ></div>
+    </div>
+</div>
+
+<th:block th:include="fragments/footer"></th:block>
+
+</body>
+</html>
